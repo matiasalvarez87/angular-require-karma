@@ -1,6 +1,4 @@
 // Karma configuration
-// Generated on Mon Apr 29 2013 16:34:32 GMT-0300 (ART)
-
 
 // base path, that will be used to resolve files and exclude
 basePath = './';
