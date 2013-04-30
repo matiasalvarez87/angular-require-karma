@@ -20,12 +20,12 @@
     dump(requireModules);
  
     require({
-        baseUrl: "/base/js/",
+        baseUrl: '/base/js/',
         paths: {
-            "jquery": "lib/jQuery/jquery-1.9.1.min",
-            "angular": "lib/angular/angular",
-            "resource": "lib/angular/angular-resource",
-            "mocks": "lib/angular/angular-mocks"
+            'jquery': 'lib/jQuery/jquery-1.9.1.min',
+            'angular': 'lib/angular/angular',
+            'resource': 'lib/angular/angular-resource',
+            'mocks': 'lib/angular/angular-mocks'
         },
         shim: {
             'jquery': { 'exports': '$' },
@@ -37,12 +37,12 @@
         window.__karma__.start();
     }, function (err) {
         var failedModules = err.requireModules;
-        console.log("err", err);
+        console.log('err', err);
 
         if (failedModules && failedModules[0]) {
-            throw new Error("Modul konnte nicht geladen werden: " + failedModules);
+            throw new Error('Modul konnte nicht geladen werden: ' + failedModules);
         } else {
-            throw new Error("Unbekannter Fehler:" + err);
+            throw new Error('Unbekannter Fehler:' + err);
         }
     });
 }(window, require));

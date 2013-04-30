@@ -15,11 +15,11 @@
 
 // require.js configuration
 require.config({
-    baseUrl: "js/",
+    baseUrl: 'js/',
     paths: {
-        "jquery": "lib/jQuery/jquery-1.9.1.min",
-        "angular": "lib/angular/angular",
-        "resource": "lib/angular/angular-resource"
+        'jquery': 'lib/jQuery/jquery-1.9.1.min',
+        'angular': 'lib/angular/angular',
+        'resource': 'lib/angular/angular-resource'
     },
     shim: {
         'jquery': { 'exports': '$' },
