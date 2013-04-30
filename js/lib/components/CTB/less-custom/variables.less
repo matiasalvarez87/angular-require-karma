@@ -1,0 +1,84 @@
+//
+// Custom Variables
+// --------------------------------------------------
+
+// Brand colors
+// -------------------------
+@logoPrimaryBrandColor: #09c;
+
+
+// Custom Accent colors
+// -------------------------
+@customBlueDark:        #182f5f;
+
+
+// Custom font faces
+// -------------------------
+@font-face {
+    font-family: 'adelle_sbregular';
+    src: url('../fonts/semibold.eot');
+    src: url('../fonts/semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/semibold.woff') format('woff'),
+         url('../fonts/semibold.ttf') format('truetype'),
+         url('../fonts/semibold.svg#adelle_sbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adelle_thregular';
+    src: url('../fonts/thin.eot');
+    src: url('../fonts/thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/thin.woff') format('woff'),
+         url('../fonts/thin.ttf') format('truetype'),
+         url('../fonts/thin.svg#adelle_thregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Typography
+// -------------------------
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       "adelle_thregular", Arial, helvetica, sans-serif;
+@serifBoldFontFamily:   "adelle_sbregular", Arial, helvetica, sans-serif; // BTR bold
+// @FontThinItalic: "adelle_thitalic", Arial, helvetica, sans-serif; // BTR
+
+@headingsFontFamily:    @serifFontFamily;
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+// Buttons
+// -------------------------
+@btnPrimaryBackground:              #e65d09; // BTR Primary color
+@btnPrimaryBackgroundHighlight:     @btnPrimaryBackground;
+
+
+// Aside Elements
+// -------------------------
+@asideBackgroundPath:    "../img/aside-bg.gif";
+@asideBackgroundColor:    #f6f6f6;
+@asideBorderTopColor:     #bdc331;
+
+
+// Navbar (only Inverted navbar)
+// -------------------------
+@navbarInverseBackground:                #111111;
+@navbarInverseBackgroundHighlight:       #222222;
+@navbarInverseBorder:                    #252525;
+
+@navbarInverseText:                      @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            @logoPrimaryBrandColor;
+@navbarInverseLinkColorActive:           @white;
+@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBorder:              @navbarInverseBackground;
+@navbarInverseSearchPlaceholderColor:    #ccc;
+
+@navbarInverseBrandColor:                @navbarInverseLinkColor;
+

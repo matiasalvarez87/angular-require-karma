@@ -1,0 +1,501 @@
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>{{_i}}Custom Base CSS{{/i}}</h1>
+    <p class="lead">{{_i}}Custom HTML elements styled and enhanced with extensible classes.{{/i}}</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#aside"><i class="icon-chevron-right"></i> {{_i}}Aside{{/i}}</a></li>
+          <li><a href="#icon-font"><i class="icon-chevron-right"></i> {{_i}}Icon Font{{/i}}</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- Aside Elements
+        ================================================== -->
+        <section id="aside">
+          <div class="page-header">
+            <h1>Aside Elements</h1>
+          </div>
+
+          <h2>Default styles</h2>
+          <p>For basic styling, add the base class <code>.aside</code> to any <code>&lt;aside&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <aside class="aside">
+              <h2>This is the Aside Title</h2>
+              <p>Testing an aside element</p>
+            </aside>
+          </div>
+<pre class="prettyprint linenums">
+&lt;aside class="aside"&gt;
+  …
+&lt;/aside&gt;
+</pre>
+
+          <hr class="bs-docs-separator">
+
+          <h2>Aside with fluid container</h2>
+          <p>Aside at the right side</p>
+          <div class="bs-docs-example">
+            <div class="container-fluid">
+              <div class="row-fluid">
+                <div class="span8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo ante at est bibendum elementum. Maecenas leo nibh, tristique vitae porta sit amet, laoreet et nibh. Nullam quis egestas felis. Quisque ultricies adipiscing ipsum, at ultricies erat tempor non. Aliquam sodales imperdiet consectetur. Donec quis malesuada libero. Maecenas quis enim. 
+                </div>
+                <aside class="aside span4">
+                  <h4>Some Title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget eleifend sem. Nullam malesuada, urna vitae pretium pellentesque, nibh augue.</p>
+                </aside>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="container-fluid"&gt;  
+  &lt;div class="row-fluid"&gt;  
+    &lt;div class="span8"&gt;
+      …
+    &lt;/div&gt;
+    &lt;aside class="aside span4"&gt;
+      …
+    &lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        </section>
+
+
+
+        <!-- Icon Font
+        ================================================== -->
+        <section id="icon-font">
+          <div class="page-header">
+            <h1>Icon Font</h1>
+          </div>
+
+          <h2>Basic Usage</h2>
+          <p>Scalable and customizable icons using html data attributes.</p>
+          <div class="bs-docs-example">
+            <style type="text/css">
+              .ctbdoc-data-icon-wrapper {
+                font-size: 40px;
+              }
+              .ctbdoc-data-icon-wrapper b {
+                margin-left: 13px;
+              }
+              .ctbdoc-data-icon-wrapper input {
+                width: 75%;
+                margin-top: 10px;
+                text-align: center;
+              }
+            </style>
+
+            <div class="clearfix">
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x21;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x21;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x22;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x22;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x23;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x23;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x24;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x24;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x25;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x25;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x26;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x26;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x27;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x27;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x28;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x28;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x29;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x29;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x2f;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x2f;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x30;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x30;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x31;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x31;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x32;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x32;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x33;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x33;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x37;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x37;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x38;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x38;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x39;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x39;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3f;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3f;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x40;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x40;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x41;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x41;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x42;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x42;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x45;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x45;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x47;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x47;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x49;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x49;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x48;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x48;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x51;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x51;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x52;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x52;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x53;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x53;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x54;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x54;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x55;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x55;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x60;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x60;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x61;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x61;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x62;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x62;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x63;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x63;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x64;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x64;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x65;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x65;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x66;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x66;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x67;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x67;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x69;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x69;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4f;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4f;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x50;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x50;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x70;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x70;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6f;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6f;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x71;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x71;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x72;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x72;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x73;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x73;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x75;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x75;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x76;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x76;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x74;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x74;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x6a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x6a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x46;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x46;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x43;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x43;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x4c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x4c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x35;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x35;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x36;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x36;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x34;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x34;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x68;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x68;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x77;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x77;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x78;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x78;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x79;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x79;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x7a;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x7a;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x3b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x3b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x7b;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x7b;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x7c;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x7c;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x7d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x7d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x7e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x7e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x44;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x44;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5f;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5f;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5d;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5d;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x59;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x59;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x56;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x56;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x57;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x57;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x58;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x58;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#x5e;"></b>
+                <input type="text" readonly="readonly" value="&amp;#x5e;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#xf0000;"></b>
+                <input type="text" readonly="readonly" value="&amp;#xf0000;" />
+              </div>
+              <div class="span1 ctbdoc-data-icon-wrapper">
+                <b data-icon="&#xe000;"></b>
+                <input type="text" readonly="readonly" value="&amp;#xe000;" />
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;b data-icon="&#x21;"&gt;&lt;/b&gt;
+</pre>
+
+        </section>
+
+      </div>{{! /span9 }}
+    </div>{{! row}}
+
+  </div>{{! /.container }}

@@ -1,0 +1,47 @@
+//
+// BlogTalkRadio Navbars
+// --------------------------------------------------
+
+
+// COMMON STYLES
+// -------------
+
+// Base class and wrapper that uses all the styles from nabvar component
+.navbar.navbar-inverse.btr-navbar {
+
+  .navbar-inner {
+    padding: 5px;
+  }
+
+  // Brand: website or project name
+  // -------------------------
+  .brand {
+    font-size: 25px;
+    font-weight: 400;
+
+    color: @white;
+
+    .color-btr {
+      color: @logoPrimaryBrandColor;
+    }
+
+    // BTR icon
+    b {
+      font-size: 29px;
+      margin-left: 5px;
+      float: right;
+      margin-top: -28px;
+    }
+  }
+
+  .nav > li.grand > a {
+    color: @btnPrimaryBackground;
+  }
+
+  // Links
+  .nav > li > a {
+    // Vertically center the text given @navbarHeight
+    padding: ((@navbarHeight - @baseLineHeight) / 2) 10px ((@navbarHeight - @baseLineHeight) / 2);
+  }
+
+}
