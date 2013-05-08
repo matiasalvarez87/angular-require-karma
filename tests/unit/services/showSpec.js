@@ -11,14 +11,14 @@ define(['angular', 'services/show', 'mocks', 'resource'], function (angular, Sho
 		beforeEach(function () {
 
 			// Creates a fake module
-            app = angular.module('myApp', ['ngResource']);
+			app = angular.module('myApp', ['ngResource']);
 
-            // Resgiter the service on the fake module
-            app.factory('showService', ['$resource', ShowService]); // Pass the dependencies for the service
+			// Resgiter the service on the fake module
+			app.factory('showService', ['$resource', ShowService]); // Pass the dependencies for the service
 
-            // Loads testing configurations for the module
-            angular.mock.module('myApp');
-        });
+			// Loads testing configurations for the module
+			angular.mock.module('myApp');
+		});
 
 		// Cache injected variables & mock server response
 		beforeEach (inject (function($httpBackend, showService) {
@@ -28,15 +28,17 @@ define(['angular', 'services/show', 'mocks', 'resource'], function (angular, Sho
 			$Show = showService;
 			
 			// Mock server response
-            $httpBackend.when('GET', 'data.json').respond( { userId: 'userX', collection: [0, 1, 2] } );
-	    }));
+			$httpBackend.when('GET', 'data.json').respond( { userId: 'userX', collection: [0, 1, 2] } );
+		}));
 
 
-        it('should work', function () {
-        	var json = $Show.showInfo();
-        	$http.flush();
+		it('should work', function () {
 
-        	dump(json);
+			// Calls the service method
+			var json = $Show.showInfo();
+
+			// Flush httpBackend service in order to make it sync: http://docs.angularjs.org/api/ngMock.$httpBackend
+			$http.flush();
 
             expect(json.userId).toBe('userX');
             expect(json.collection.length).toBe(3);
