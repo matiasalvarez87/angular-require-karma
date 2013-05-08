@@ -7,9 +7,13 @@ define(['angular', 'mocks', 'controllers/homeController'], function (angular, mo
 
 		var scope, ctrl;
 
+		var mockedService = { 
+			showInfo: function() {}
+		};
+
 		beforeEach( inject(function($rootScope, $controller) {
 			scope = $rootScope.$new();
-			ctrl = $controller(HomeController, {$scope: scope});
+			ctrl = $controller(HomeController, { $scope: scope, showService: mockedService });
 	    }));
 
 		describe('Testing default variables', function () {

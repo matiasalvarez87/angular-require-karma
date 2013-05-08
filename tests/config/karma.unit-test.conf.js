@@ -1,7 +1,7 @@
 // Karma configuration
 
 // base path, that will be used to resolve files and exclude
-basePath = './';
+basePath = './../../';
 
 
 // list of files / patterns to load in the browser
@@ -17,12 +17,14 @@ files = [
   {pattern: 'js/lib/angular/angular-mocks.js', included: false},
 
   {pattern: 'js/controllers/*.js', included: false},
+  {pattern: 'js/directives/*.js', included: false},
+  {pattern: 'js/services/*.js', included: false},
   {pattern: 'js/routes.js', included: false},
   {pattern: 'js/app.js', included: false},
 
-  {pattern: 'test/**/*Spec.js', included: false},
+  {pattern: 'tests/unit/**/*Spec.js', included: false},
   
-  'test/main-test.js'
+  'tests/unit/main-test.js'
 ];
 
 

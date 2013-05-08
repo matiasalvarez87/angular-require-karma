@@ -40,9 +40,9 @@
         console.log('err', err);
 
         if (failedModules && failedModules[0]) {
-            throw new Error('Modul konnte nicht geladen werden: ' + failedModules);
+            throw new Error('The module cannot be loaded: ' + failedModules);
         } else {
-            throw new Error('Unbekannter Fehler:' + err);
+            throw new Error('Unknown error:' + err);
         }
     });
 }(window, require));

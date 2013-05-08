@@ -24,6 +24,11 @@ define(['angular'], function(angular) {
         it('should have controllers as a dependency', function() {
           expect(hasModule('controllers')).toEqual(true);
         });
+
+        it('should have directives as a dependency', function() {
+          expect(hasModule('directives')).toEqual(true);
+        });
+
       });
 
     });

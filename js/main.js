@@ -3,8 +3,9 @@
  * Require.js configuration and initialization.
  **/
 
- function bootstrap() {
-	require(['angular', 'app', 'routes', 'controllers/controllers'], function (angular, app) {
+function bootstrap() {
+	require(['angular', 'app', 'resource', 'routes', 
+        'controllers/controllers', 'directives/directives', 'services/services'], function (angular, app) {
 
 	        angular.element(document).ready(function (app) {
 	            angular.bootstrap(document, ['myApp']);

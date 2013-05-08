@@ -3,3 +3,13 @@
 <br>
 <input ng-model="name">
 <button ng-click="greetings()">Update</button>
+
+<tiles title="Statistics" source="allStats"></tiles>
+
+<h1>Service</h1>
+
+<ul>
+	<li ng-repeat="item in serviceData.shows">
+		{{ item.title }} / {{ item.subtitle }}
+	</li>
+</ul>
