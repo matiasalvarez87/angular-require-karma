@@ -40,9 +40,9 @@ define(['angular', 'services/show', 'mocks', 'resource'], function (angular, Sho
 			// Flush httpBackend service in order to make it sync: http://docs.angularjs.org/api/ngMock.$httpBackend
 			$http.flush();
 
-            expect(json.userId).toBe('userX');
-            expect(json.collection.length).toBe(3);
-        });
+			expect(json.userId).toBe('userX');
+			expect(json.collection.length).toBe(3);
+		});
 
 	});
 });
